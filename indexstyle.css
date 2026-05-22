@@ -414,10 +414,6 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-.footer-section ul li a:hover {
-    color: #ffffff00;
-}
-
 .contact-info p {
     margin: 5px 0;
 }
@@ -435,3 +431,4 @@ hr {
     width: 100%;
     color: #ececece1;
 }
+
