@@ -332,12 +332,12 @@ nav ul li a:hover {
 .features {
     justify-content: space-around;
     background: #ffffff;
-    height: 360px;
+    height: 400px;
     text-align: center;
 }
 
 .features-title {
-    padding: 50px 10px 30px 10px;
+    padding: 70px 10px 50px 10px;
     display: flex;
     justify-content: center;
     font-size: 50px;
@@ -358,8 +358,8 @@ nav ul li a:hover {
 }
 
 .feature img {
-    height: 60px;
-    width: 60px;
+    height: 120px;
+    width: 120px;
     border-radius: 30px;
     margin-bottom: 10px;
 }
@@ -407,7 +407,7 @@ nav ul li a:hover {
 }
 
 .footer-section ul li {
-    margin-bottom: 8px;
+    margin-bottom: 18px;
 }
 
 .footer-section ul li a {
