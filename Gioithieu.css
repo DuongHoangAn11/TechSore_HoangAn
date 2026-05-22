@@ -204,9 +204,9 @@ nav ul li a:hover {
 .features {
     justify-content: space-around;
     background: #ffffff;
-    height: 200px;
+    height: 300px;
     text-align: center;
-    margin-bottom: 50px;
+    padding: 50px 0 50px 0;
 }
 
 .features-title {
@@ -234,7 +234,7 @@ nav ul li a:hover {
 }
 
 .feature:hover{
-    width: 25%;
+    width: 21%;
 }
 
 .feature img {
