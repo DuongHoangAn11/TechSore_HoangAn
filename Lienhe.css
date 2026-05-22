@@ -134,21 +134,22 @@ nav ul li a:hover {
 }
 
 .below {
-    height: 220px;
+    height: 420px;
     background: #2563eb;
-    padding: 70px 40px;
+    padding: 150px 40px;
 }
 
 .Listen {
     list-style: none;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 .normal {
     color: #ececece1;
     margin-top: 10px;
+    font-size: 28px;
 }
 
 .lienhe {
