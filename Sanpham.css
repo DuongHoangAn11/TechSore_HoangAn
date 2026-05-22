@@ -128,7 +128,7 @@ nav ul li a:hover {
 }
 
 .search-bar {
-    padding: 20px 35px 20px 20px;
+    padding: 50px 35px 20px 50px;
     border-radius: 5px;
     border: 1px solid #a3d6ff;
 }
@@ -138,6 +138,7 @@ nav ul li a:hover {
     top: 45%;
     right: 15px;
     transform: translateY(-50%);
+    font-size: 22px;
 }
 
 .below-header {
