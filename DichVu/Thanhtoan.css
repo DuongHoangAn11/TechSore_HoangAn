@@ -625,14 +625,14 @@ nav ul li a:hover {
 }
 
 .footer-section h4 {
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 20px;
     color: #ffffff;
 }
 
 .footer-section p {
     color: #ececece1;
-    font-size: 15px;
+    font-size: 26px;
 }
 
 .footer-section ul {
@@ -649,10 +649,6 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-.footer-section ul li a:hover {
-    color: #ffffff00;
-}
-
 .contact-info p {
     margin: 5px 0;
 }
@@ -665,11 +661,12 @@ hr {
     margin: 20px 0;
 }
 
-.mid-footer{
+.mid-footer {
     text-align: center;
     width: 100%;
     color: #ececece1;
 }
+
 
 @media (min-width: 768px) {
     .bank-grid {
