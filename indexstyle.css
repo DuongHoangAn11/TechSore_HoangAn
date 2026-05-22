@@ -13,7 +13,6 @@ header {
     width: 100%;
     background: white;
     height: 120px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,8 +27,6 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
-
-    font-size: 20px;
     font-weight: bold;
     color: #1e3a8a;
 }
@@ -76,19 +73,14 @@ nav ul li a:hover {
 
 .dropdown {
     position: relative;
-
     list-style: none;
 }
 
 .dropdown>a {
     text-decoration: none;
-
     color: #1e293b;
-
     font-size: 30px;
-
     padding: 15px 20px;
-
     display: flex;
     align-items: center;
     gap: 8px;
@@ -96,22 +88,14 @@ nav ul li a:hover {
 
 .dropdown-menu {
     position: absolute;
-
     top: 100%;
     right: 0;
-
     width: 300px;
-
     background: white;
-
     border-radius: 12px;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-
     padding: 10px 0;
-
     display: none;
-
     z-index: 999;
 }
 
@@ -125,23 +109,16 @@ nav ul li a:hover {
 
 .dropdown-menu li a {
     display: block;
-
     padding: 18px 22px;
-
     text-decoration: none;
-
     color: #475569;
-
     font-size: 30px;
-
     transition: 0.3s;
 }
 
 .dropdown-menu li a:hover {
     background: #eff6ff;
-
     color: #2563eb;
-
     font-weight: bold;
 }
 
@@ -158,14 +135,11 @@ nav ul li a:hover {
 
 .service-select {
     width: 90px;
-
     border: none;
     outline: none;
     background: transparent;
-
     font-size: 18px;
     color: #374151;
-
     cursor: pointer;
     height: 70px;
 }
@@ -173,18 +147,14 @@ nav ul li a:hover {
 .hero {
     width: 100%;
     height: 700px;
-
     background:
         linear-gradient(rgba(37, 99, 235, 0.75),
             rgba(30, 64, 175, 0.75)),
         url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600");
-
     background-size: cover;
     background-position: center;
-
     display: flex;
     align-items: center;
-
     padding-left: 60px;
 }
 
@@ -210,15 +180,12 @@ nav ul li a:hover {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-
     padding: 18px 40px;
     background: white;
     color: #2563eb;
-
     text-decoration: none;
     font-size: 30px;
     font-weight: bold;
-
     border-radius: 16px;
     transition: 0.3s;
 }
@@ -258,12 +225,9 @@ nav ul li a:hover {
 .product-card {
     width: 50%;
     background: white;
-
     border-radius: 24px;
     overflow: hidden;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
     transition: 0.3s;
 }
 
@@ -317,16 +281,12 @@ nav ul li a:hover {
 
 .product-bottom button {
     padding: 16px 32px;
-
     border: none;
     border-radius: 16px;
-
     background: #2563eb;
     color: white;
-
     font-size: 23px;
     font-weight: bold;
-
     cursor: pointer;
     transition: 0.3s;
 }
@@ -354,26 +314,18 @@ nav ul li a:hover {
 
 .back-top {
     position: fixed;
-
     right: 30px;
     bottom: 30px;
-
     width: 60px;
     height: 60px;
-
     background: #2563eb;
     color: white;
-
     border-radius: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 33px;
-
     cursor: pointer;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
