@@ -372,7 +372,8 @@ nav ul li a:hover {
 }
 
 .feature p {
-    color: #6b7280
+    color: #6b7280;
+    font-size: 26px;
 }
 
 .footer {
