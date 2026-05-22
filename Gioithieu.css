@@ -257,7 +257,7 @@ nav ul li a:hover {
 }
 
 .info-contain {
-    height: 200px;
+    height: 300px;
     align-items: center;
     background-color: #2563eb;
     display: flex;
@@ -265,12 +265,12 @@ nav ul li a:hover {
 }
 
 .info-title {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 .info-info {
-    font-size: 16px;
+    font-size: 18px;
     color: rgb(255, 255, 255);
 }
 
