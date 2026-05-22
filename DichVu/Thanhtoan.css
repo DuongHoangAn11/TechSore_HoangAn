@@ -617,6 +617,16 @@ nav ul li a:hover {
     height: 500px;
 }
 
+.footer {
+    background: #01081efa;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 500px;
+}
+
 .footer-section {
     width: 30%;
     margin-bottom: 20px;
@@ -666,7 +676,6 @@ hr {
     color: #ececece1;
     font-size: 26px;
 }
-
 
 @media (min-width: 768px) {
     .bank-grid {
