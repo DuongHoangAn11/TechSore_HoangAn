@@ -35,9 +35,13 @@ header {
 }
 
 .logo i {
-    font-size: 28px;
+    font-size: 40px;
     color: #2563eb;
     padding-left: 20px;
+}
+
+.logo span{
+    font-size: 30px;
 }
 
 nav ul {
