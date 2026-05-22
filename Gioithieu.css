@@ -13,7 +13,6 @@ header {
     width: 100%;
     background: white;
     height: 120px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,16 +27,18 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
-
-    font-size: 20px;
     font-weight: bold;
     color: #1e3a8a;
 }
 
 .logo i {
-    font-size: 28px;
+    font-size: 40px;
     color: #2563eb;
     padding-left: 20px;
+}
+
+.logo span{
+    font-size: 30px;
 }
 
 nav ul {
@@ -60,7 +61,7 @@ nav ul li a {
     transition: 0.3s;
     border-radius: 5px;
     padding: 0 15px;
-    height: 70px;
+    height: 1200px;
     align-items: center;
 }
 
@@ -72,19 +73,14 @@ nav ul li a:hover {
 
 .dropdown {
     position: relative;
-
     list-style: none;
 }
 
 .dropdown>a {
     text-decoration: none;
-
     color: #1e293b;
-
     font-size: 30px;
-
     padding: 15px 20px;
-
     display: flex;
     align-items: center;
     gap: 8px;
@@ -92,22 +88,14 @@ nav ul li a:hover {
 
 .dropdown-menu {
     position: absolute;
-
     top: 100%;
     right: 0;
-
     width: 300px;
-
     background: white;
-
     border-radius: 12px;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-
     padding: 10px 0;
-
     display: none;
-
     z-index: 999;
 }
 
@@ -121,23 +109,16 @@ nav ul li a:hover {
 
 .dropdown-menu li a {
     display: block;
-
     padding: 18px 22px;
-
     text-decoration: none;
-
     color: #475569;
-
     font-size: 30px;
-
     transition: 0.3s;
 }
 
 .dropdown-menu li a:hover {
     background: #eff6ff;
-
     color: #2563eb;
-
     font-weight: bold;
 }
 
@@ -151,7 +132,6 @@ nav ul li a:hover {
 .cart i {
     padding-right: 10px;
 }
-
 .Gioithieu-start {
     background: #d9e4ff;
     height: 220px;
