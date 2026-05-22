@@ -238,21 +238,22 @@ nav ul li a:hover {
 }
 
 .feature img {
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     border-radius: 30px;
     margin-bottom: 10px;
 }
 
 .feature h3 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 10px;
     color: #3a3a3a;
 }
 
 .feature p {
-    color: #6b7280
+    color: #6b7280;
+    font-size: 20px;
 }
 
 .info-contain {
