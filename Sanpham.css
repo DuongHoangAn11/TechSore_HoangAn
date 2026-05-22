@@ -173,7 +173,7 @@ nav ul li a:hover {
 }
 
 .filter-btn {
-    padding: 15px 32px;
+    padding: 20px 36px;
 
     border: none;
     border-radius: 30px;
@@ -181,7 +181,7 @@ nav ul li a:hover {
     background: #ffffff;
     color: #1e293b;
 
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
 
     cursor: pointer;
@@ -233,7 +233,7 @@ nav ul li a:hover {
     color: white;
     padding: 10px 16px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -242,7 +242,7 @@ nav ul li a:hover {
 }
 
 .product-info h3 {
-    font-size: 18px;
+    font-size: 26px;
     margin-bottom: 18px;
     color: #0f172a;
 }
@@ -259,13 +259,13 @@ nav ul li a:hover {
 }
 
 .rating span {
-    font-size: 15px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .rating small {
     color: #6e7e98;
-    font-size: 15px;
+    font-size: 22px;
 }
 
 .product-bottom {
@@ -276,7 +276,7 @@ nav ul li a:hover {
 
 .product-bottom h4 {
     color: #2563eb;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .product-bottom button {
@@ -289,7 +289,6 @@ nav ul li a:hover {
     font-weight: bold;
     cursor: pointer;
 }
-
 
 .footer {
     background: #01081efa;
