@@ -592,65 +592,62 @@ nav ul li a:hover {
 }
 
 .footer {
-  background: #01081efa;
-  color: #fff;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    background: #01081efa;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-section {
-  width: 30%;
-  margin-bottom: 20px;
+    width: 30%;
+    margin-bottom: 20px;
 }
 
 .footer-section h4 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .footer-section p {
-  color: #ececece1;
-  font-size: 15px;
+    color: #ececece1;
+    font-size: 26px;
 }
 
 .footer-section ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-section ul li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .footer-section ul li a {
-  color: #ececece1;
-  text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-  color: #ffffff00;
+    color: #ececece1;
+    text-decoration: none;
 }
 
 .contact-info p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 hr {
-  width: 100%;
-  border: none;
-  height: 2px;
-  background-color: #333;
-  margin: 20px 0;
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
 }
 
 .mid-footer {
-  text-align: center;
-  width: 100%;
-  color: #ececece1;
+    text-align: center;
+    width: 100%;
+    color: #ececece1;
 }
+
 
 @media screen and (max-width: 768px) {
   .events-grid {
