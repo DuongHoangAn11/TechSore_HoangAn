@@ -148,7 +148,7 @@ nav ul li a:hover {
 
 .below-header ul {
     list-style: none;
-    padding: 70px 40px;
+    padding: 150px 40px;
 }
 
 .title {
@@ -160,6 +160,7 @@ nav ul li a:hover {
 .lazy {
     margin-top: 20px;
     color: #ececece1;
+    font-size: 28px;
 }
 
 /* ===== FILTER BUTTON ===== */
