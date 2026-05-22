@@ -332,9 +332,8 @@ nav ul li a:hover {
 .features {
     justify-content: space-around;
     background: #ffffff;
-    height: 400px;
+    height: 460px;
     text-align: center;
-    margin-bottom: 60px;
 }
 
 .features-title {
