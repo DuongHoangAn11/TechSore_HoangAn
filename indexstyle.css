@@ -414,6 +414,7 @@ nav ul li a:hover {
 .footer-section ul li a {
     color: #ececece1;
     text-decoration: none;
+    font-size: 26px;
 }
 
 .contact-info p {
