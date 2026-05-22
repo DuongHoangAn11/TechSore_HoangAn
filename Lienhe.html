@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="Lienhe.css">
+    <script src="AEO&AIEO/lienhe.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>TechStore</span>
+        </div>
+
+        <div class="space">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="Gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="Sanpham.html">Sản phẩm</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
+                    <li class="dropdown">
+
+                        <a href="#">
+                            Dịch vụ
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+
+                        <!-- MENU -->
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="/DichVu/giaohang.html">
+                                    Giao hàng nhanh chóng
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/DichVu/hotro.html">
+                                    Hỗ trợ 24/7
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/DichVu/doitra.html">
+                                    Đổi trả miễn phí
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/DichVu/baohanh.html">
+                                    Bảo hành chính hãng
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/DichVu/uudai.html">
+                                    Ưu đãi đặc biệt
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/DichVu/Thanhtoan.html">
+                                    Thanh toán tiện lợi
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="below">
+        <div class="Listen">Liên hệ</div>
+        <div class="normal"> Chúng tôi luôn sẵn sàng lắng nghe bạn</div>
+    </div>
+
+    <section class="lienhe">
+        <div class="khungchua">
+            <form onsubmit="return validate1()">
+                <div class="send">Gửi tin nhắn</div>
+                <div class="khung1">
+                    <label for="name">Họ tên *</label>
+                    <input type="text" placeholder="Nhập họ tên..." id="name">
+                    <span class="error-message" id="error-name"></span>
+                </div>
+
+                <div class="khung1">
+                    <label for="test">Email *</label>
+                    <input type="email" placeholder="Nhập email..." id="email">
+                    <span class="error-message" id="error-email"></span>
+                </div>
+
+                <div class="khung1">
+                    <label for="test">Nội dung *</label>
+                    <textarea name="tinnhan" id="tinnhan" rows="6" placeholder="Nhập tin nhắn..."></textarea>
+                    <span class="error-message" id="error-tinnhan"></span>
+                </div>
+
+                <div class="khungnut">
+                    <button type="submit"> Gửi tin nhắn </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="content">
+            <div class="khungchua2">
+                <div class="title-info"> Thông tin liên lạc </div>
+                <div class="info">
+                    <div class="for-info">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="info-random">
+                        <div class="name"> Địa chỉ </div>
+                        <div class="text"> 245 Nguyễn Thị Minh Khai, Phường Bến Thành, Quận 1, TP. Hồ Chí Minh
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="for-info">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="info-random">
+                        <div class="name"> Điện thoại </div>
+                        <div class="text"> 0907 979 757</div>
+                        <div class="text"> 0907 579 787</div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="for-info">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="info-random">
+                        <div class="name">Email</div>
+                        <div class="text"> HoangAn@techstore.vn </div>
+                        <div class="text"> HoangAn@shopowner.vn </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="for-info">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="info-random">
+                        <div class="name"> Giờ làm việc </div>
+                        <div class="text"> Từ thứ 2 - thứ 6: 8:00 - 21:00 </div>
+                        <div class="text"> Từ thứ 7 - chủ nhật: 10:00 - 19:00 </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="khungchua2">
+                <div class="map-title">
+                    Bản đồ
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.460128468535!2d106.69084117570385!3d10.77653025920516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3d2db0d52d%3A0x6c9cb4e7c1c52d72!2zMjQ1IE5ndXnhu4VuIFRo4buLIE1pbmggS2hhaSwgUGjGsOG7nW5nIELhur9uIFRow6BuaCwgUXXhuq1uIDEsIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1710000000000!5m2!1svi!2s"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>🛒 TechStore</h4>
+            <p>Cung cấp các sản phẩm công nghệ chất lượng cao với giá cả hợp lý.<br>
+                Uy tín – Chất lượng – Chuyên nghiệp.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Liên kết nhanh</h4>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-info">
+            <h4>Thông tin liên hệ</h4>
+            <p>📍245 Nguyễn Thị Minh Khai, Phường Bến Thành, Quận 1, TP. Hồ Chí Minh</p>
+            <p>📞 0901 234 567</p>
+            <p>✉️ contact@techstore.vn</p>
+        </div>
+        <hr>
+        <div class="mid-footer">©️ 2026, TechStore, Bản quyền thuộc về web</div>
+    </footer>
+</body>
+
+</html>
