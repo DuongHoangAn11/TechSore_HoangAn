@@ -290,6 +290,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+
 .footer {
     background: #01081efa;
     color: #fff;
@@ -297,6 +298,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 500px;
 }
 
 .footer-section {
@@ -305,14 +307,14 @@ nav ul li a:hover {
 }
 
 .footer-section h4 {
-    font-size: 32px;
+    font-size: 26px;
     margin-bottom: 20px;
     color: #ffffff;
 }
 
 .footer-section p {
     color: #ececece1;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .footer-section ul {
@@ -321,12 +323,13 @@ nav ul li a:hover {
 }
 
 .footer-section ul li {
-    margin-bottom: 8px;
+    margin-bottom: 18px;
 }
 
 .footer-section ul li a {
     color: #ececece1;
     text-decoration: none;
+    font-size: 22px;
 }
 
 .contact-info p {
@@ -345,5 +348,6 @@ hr {
     text-align: center;
     width: 100%;
     color: #ececece1;
+    font-size: 26px;
 }
 
