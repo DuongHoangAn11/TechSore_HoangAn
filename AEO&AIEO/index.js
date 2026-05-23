@@ -1,18 +1,8 @@
-/**
- * TechStore - Chiến lược tối ưu hóa công cụ trả lời AI (AEO / AIEO)
- * File: script.js
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-    
-    // =========================================================================
-    // 1. KỸ THUẬT ENTITY MAPPING (ĐỊNH DANH THỰC THỂ DOANH NGHIỆP)
-    // Giúp AI xác minh TechStore là ai, ở đâu, kinh doanh gì để xây dựng E-E-A-T.
-    // =========================================================================
     const techStoreEntitySchema = {
         "@context": "https://schema.org",
         "@type": "Store",
-        "@id": "https://techstore.vn/#organization", // Định danh thực thể duy nhất trên Internet
+        "@id": "https://techstore.vn/#organization",
         "name": "TechStore",
         "url": "https://techstore.vn",
         "logo": "https://www.freeiconspng.com/uploads/message-icon-png-0.png", 
@@ -43,10 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // =========================================================================
-    // 2. KỸ THUẬT CONVERSATIONAL ANSWERING SCHEMA (MÔ HÌNH HỎI ĐÁP ĐÀM THOẠI)
-    // Cung cấp dữ liệu dạng "Ăn liền" để AI trích xuất làm Featured Snippet khi người dùng hỏi trợ lý ảo.
-    // =========================================================================
     const conversationalFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -78,9 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // =========================================================================
-    // 3. HÀM TỰ ĐỘNG INJECT (NHÚNG DỮ LIỆU) VÀO CẤU TRÚC WEB DOM
-    // =========================================================================
     function injectAieoSchema(schemaObject) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
@@ -88,13 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(scriptElement);
     }
 
-    // Thực thi nhúng ngầm dữ liệu để AI dễ dàng thu thập chéo
     injectAieoSchema(techStoreEntitySchema);
     injectAieoSchema(conversationalFaqSchema);
 
-    // =========================================================================
-    // 4. LOGIC EVENT HOOK (Tối ưu trải nghiệm Form tránh lỗi tải trang)
-    // =========================================================================
     const emailForm = document.getElementById("emailForm");
     if (emailForm) {
         emailForm.addEventListener("submit", function (e) {
