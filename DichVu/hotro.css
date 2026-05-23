@@ -168,36 +168,30 @@ nav ul li a:hover {
 }
 
 .service-hero h1 {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .service-hero p {
-    font-size: 22px;
+    font-size: 26px;
     color: #ececece1;
 }
 
 .delivery-process {
-
     background: #ffffff;
-
-
-
     padding: 80px 40px 0px 40px;
-
     text-align: center;
-
 }
 
 .service-hero h1 {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .service-hero p {
-    font-size: 22px;
+    font-size: 26px;
     color: #ececece1;
 }
 
@@ -216,10 +210,14 @@ nav ul li a:hover {
 }
 
 .process-title h1 {
-    font-size: 40px;
+    font-size: 45x;
     font-weight: 700;
     color: #0f172a;
     margin-bottom: 10px;
+}
+
+.process-title p{
+    font-size: 26px;
 }
 
 .feature-card {
