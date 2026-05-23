@@ -206,13 +206,13 @@ nav ul li a:hover {
 }
 
 .section-header h2 {
-    font-size: 62px;
+    font-size: 50px;
     color: #0f172a;
     margin-bottom: 20px;
 }
 
 .section-header p {
-    font-size: 32px;
+    font-size: 26px;
     color: #6b7280;
 }
 
@@ -246,7 +246,7 @@ nav ul li a:hover {
 }
 
 .product-info h3 {
-    font-size: 32px;
+    font-size: 26px;
     margin-bottom: 20px;
     color: #0f172a;
 }
@@ -265,7 +265,7 @@ nav ul li a:hover {
 
 .rating span {
     color: #475569;
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .product-bottom {
@@ -275,7 +275,7 @@ nav ul li a:hover {
 }
 
 .product-bottom h4 {
-    font-size: 32px;
+    font-size: 26px;
     color: #2563eb;
 }
 
@@ -340,7 +340,7 @@ nav ul li a:hover {
     padding: 70px 10px 50px 10px;
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bolder;
 }
 
@@ -358,9 +358,9 @@ nav ul li a:hover {
 }
 
 .feature img {
-    height: 120px;
-    width: 120px;
-    border-radius: 30px;
+    height: 100px;
+    width: 10px;
+    border-radius: 50%;
     margin-bottom: 10px;
 }
 
