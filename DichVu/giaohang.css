@@ -231,19 +231,17 @@ nav ul li a:hover {
 .delivery-process {
     padding: 80px 40px;
     background: #f8fafc;
-}
-
-.process-title h1 {
-    font-size: 40px;
-
-    color: #0f172a;
-
     margin-bottom: 15px;
 }
 
-.process-title p {
-    font-size: 20px;
+.process-title h1 {
+    font-size: 45px;
+    text-align: center;
+    color: #0f172a;
+}
 
+.process-title p {
+    font-size: 26px;
     color: #475569;
 }
 
@@ -281,7 +279,7 @@ nav ul li a:hover {
 
 .step-dot {
     position: absolute;
-    right: -30px;
+    right: -20px;
     top: 50%;
     width: 20px;
     height: 20px;
