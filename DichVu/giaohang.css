@@ -261,31 +261,30 @@ nav ul li a:hover {
     background: white;
     border: 1px solid #e2e8f0;
     border-radius: 20px;
-    padding: 30px 20px;
+    padding: 25px 20px;
     position: relative;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
+    min-height: 250px;
 }
 
 .step-number {
-    font-size: 30px; /* Giảm size để gọn hơn */
+    font-size: 24px;
     font-weight: bold;
     color: #2563eb;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .step-box h2 {
-    font-size: 26px;
-
-    margin-bottom: 20px;
-
+    font-size: 20px;
+    margin-bottom: 15px;
     color: #0f172a;
 }
 
 .step-box p {
-    font-size: 22px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.5;
     color: #475569;
 }
 
