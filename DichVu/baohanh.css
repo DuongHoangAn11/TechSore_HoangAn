@@ -361,7 +361,7 @@ nav ul li a:hover {
 }
 
 .Condition h1 {
-    font-size: 40px;
+    font-size: 45px;
 
     color: #0f172a;
 
@@ -369,7 +369,7 @@ nav ul li a:hover {
 }
 
 .Condition p {
-    font-size: 20px;
+    font-size: 26px;
 
     color: #475569;
 }
@@ -384,14 +384,14 @@ nav ul li a:hover {
 }
 
 .Condition i {
-    font-size: 30px;
+    font-size: 33px;
     float: left;
 }
 
 .condition1-title {
     padding: 0 10px;
     float: left;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -401,12 +401,12 @@ nav ul li a:hover {
 
 .condition-box1 p {
     margin: 20px 0 20px 0;
-    font-size: 17px;
+    font-size: 20px;
 
 }
 
 .condition-box1 p i {
-    font-size: 10px;
+    font-size: 15px;
     margin: 7px 10px 0 10px;
 }
 
@@ -426,17 +426,17 @@ nav ul li a:hover {
 .condition2-title {
     padding: 0 10px;
     float: left;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .condition-box2 p {
     margin: 20px 0 20px 0;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .condition-box2 p i {
-    font-size: 10px;
+    font-size: 15px;
     margin: 7px 10px 0 10px;
 }
 
