@@ -1,24 +1,13 @@
-/**
- * TOÀN BỘ CHIẾN LƯỢC AEO & AIEO FOR SUPPORT ENGINE (hotro.html)
- * Quy hoạch cấu trúc dữ liệu theo sơ đồ thư mục phân tách độc lập
- * Vị trí lưu tệp: AEO&AIEO/hotro.js
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-    // =========================================================================
-    // KHỐI KỸ THUẬT 1 (AIEO): Định danh cấu trúc thực thể Dịch vụ Hỗ trợ khách hàng
-    // =========================================================================
     const customerSupportServiceSchema = {
         "@context": "https://schema.org",
         "@type": "Service",
-        // KỸ THUẬT AIEO: Định vị URL chính xác của trang hỗ trợ nằm trong thư mục dịch vụ
         "@id": "https://techstore.vn/dichvu/hotro.html#service", 
         "name": "Dịch vụ Hỗ trợ kỹ thuật và Chăm sóc khách hàng 24/7",
         "description": "Trung tâm tiếp nhận yêu cầu, xử lý lỗi phần cứng và hỗ trợ cài đặt phần mềm thiết bị công nghệ liên tục mọi lúc mọi nơi.",
         "provider": {
             "@type": "Organization",
-            "@id": "https://techstore.vn/#organization", // Đồng bộ đồng nhất về định danh gốc của thương hiệu mẹ
+            "@id": "https://techstore.vn/#organization",
             "name": "TechStore",
             "url": "https://techstore.vn/"
         },
@@ -39,10 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "serviceUrl": "https://techstore.vn/Lienhe.html"
         }
     };
-
-    // =========================================================================
-    // KHỐI KỸ THUẬT 2 (AEO): Thiết lập mô hình câu hỏi đàm thoại dựa trên dữ liệu trang
-    // =========================================================================
+    
     const supportFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -66,9 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 3: Hàm tự động nhúng ngầm dữ liệu vào cấu trúc trang (DOM Injection)
-    // =========================================================================
     function injectAeoEngine(schemaData) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
@@ -76,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(scriptElement);
     }
 
-    // Thực thi nạp đồng thời khối định danh thực thể (AIEO) và khối đàm thoại (AEO)
     injectAeoEngine(customerSupportServiceSchema);
     injectAeoEngine(supportFaqSchema);
 
