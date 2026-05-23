@@ -186,7 +186,6 @@ nav ul li a:hover {
 
 .payment-wrapper {
     width: 100%;
-    max-width: 1140px;
     margin: 0 auto;
     padding: 50px 20px;
 }
@@ -412,7 +411,6 @@ nav ul li a:hover {
 
 .security-wrapper {
     width: 100%;
-    max-width: 1140px;
     margin: 0 auto;
     padding: 50px 20px;
 }
