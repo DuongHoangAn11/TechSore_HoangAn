@@ -235,24 +235,24 @@ nav ul li a:hover {
 }
 
 .feature-icon {
-    font-size: 36px;
+    font-size: 50px;
     color: #2563eb;
     margin-bottom: 15px;
 }
 
 .feature-card strong{
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .feature-card h2 {
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .feature-card p {
     color: #64748b;
     margin-top: 5px;
-    font-size: 26px;
+    font-size: 23px;
 }
 
 .time {
@@ -266,7 +266,7 @@ nav ul li a:hover {
     grid-template-columns: repeat(4, 1fr);
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .time-card {
