@@ -355,7 +355,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   border: 2px solid transparent;
-  margin-right: 30px;
+  margin: 0 20px;
 }
 
 .tier-head {
