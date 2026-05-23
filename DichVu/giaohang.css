@@ -317,16 +317,16 @@ nav ul li a:hover {
 }
 
 .shipping-icon i {
-    font-size: 60px;
+    font-size: 100px;
 }
 
 .free-shipping h1 {
-    font-size: 30px;
+    font-size: 45px;
     margin-bottom: 25px;
 }
 
 .free-shipping p {
-    font-size: 18px;
+    font-size: 26px;
     color: #ffffffb7;
 }
 
@@ -348,9 +348,7 @@ nav ul li a:hover {
     padding:18px 40px;
     border-radius:10px;
     transition:0.3s;
-    
 }
-
 
 .shop-now a:hover{
     transform:translateY(-5px);
@@ -370,12 +368,17 @@ nav ul li a:hover {
 }
 
 .fuck-title{
-    font-size: 25px;
+    font-size: 36px;
     font-weight: bold;
+}
+
+.fuck-icon{
+    font-size: 30px;
 }
 
 .fuck-sc{
     margin-bottom: 15px;
+    font-size: 26px;
 }
 
 .footer {
