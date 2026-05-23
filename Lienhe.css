@@ -345,3 +345,7 @@ hr {
     color: #ececece1;
     font-size: 26px;
 }
+
+.error-message{
+    color: red;
+}
