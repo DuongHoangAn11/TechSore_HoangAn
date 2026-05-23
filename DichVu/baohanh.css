@@ -331,14 +331,13 @@ nav ul li a:hover {
 }
 
 .number i {
-    width: 80px;
-    height: 80px;
     background: #c300ffb3;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    font-size: 26px;
 }
 
 .Condition {
@@ -514,7 +513,8 @@ nav ul li a:hover {
 }
 
 .fuck-sc p{
-    padding: 5px 10px;
+    margin-top: 5px;
+    padding: 10px 10px;
     color: rgb(95, 95, 95);
     font-size: 22px;
 }
