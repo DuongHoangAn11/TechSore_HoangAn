@@ -161,22 +161,25 @@ nav ul li a:hover {
 .title {
     font-weight: bold;
     font-size: 50px;
-    padding: 120px 10px 20px 0px;
+    padding: 80px 10px 20px 0px;
 }
 
 .middle-content {
     align-items: center;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .mid {
-    justify-content: space-between;
     display: flex;
+    gap: 40px;
+    padding: 0 50px;
+    align-items: flex-start;
 }
 
 .middle-text {
-    padding-left: 30px;
-    align-items: center;
+    flex: 1;
+    padding-left: 0;
 }
 
 .middle-text ul {
@@ -189,16 +192,23 @@ nav ul li a:hover {
 }
 
 .image-wrapper {
-    max-width: 60%;
+    flex: 0 0 50%;
+    max-width: 50%;
     border-radius: 20px;
     overflow: hidden;
-    margin: 70px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: block;
+    margin-top: 100px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover {
+    transform: scale(1.02);
 }
 
 .main-image {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
     display: block;
 }
 
@@ -232,10 +242,13 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .feature:hover{
-    width: 21%;
+    width: 20%;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .feature img {
