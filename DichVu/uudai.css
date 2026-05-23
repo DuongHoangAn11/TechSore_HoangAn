@@ -645,6 +645,10 @@ hr {
     font-size: 26px;
 }
 
+.events-grid, .tier-grid, .promo-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 @media screen and (max-width: 768px) {
   .events-grid {
     grid-template-columns: repeat(3, 1fr);
