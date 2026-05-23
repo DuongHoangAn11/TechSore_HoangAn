@@ -229,81 +229,57 @@ nav ul li a:hover {
 }
 
 .delivery-process {
-    background: #f8fafc;
     padding: 80px 40px;
-    overflow: hidden; /* Ngăn chặn việc tràn nội dung ra ngoài */
-}
-
-.process-title {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.process-title h1 {
-    font-size: 45px;
-    color: #0f172a;
-    margin-bottom: 15px;
-}
-
-.process-title p {
-    font-size: 26px;
-    color: #475569;
+    background: #f8fafc;
 }
 
 .process-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr); /* Chia đều 5 cột */
     gap: 20px;
-    align-items: stretch; /* Đảm bảo các box cao bằng nhau */
+    margin-top: 40px;
 }
 
 .step-box {
     background: white;
-    border: 1px solid #e2e8f0;
-    border-radius: 20px;
-    padding: 25px 20px;
-    position: relative;
+    padding: 30px 20px;
+    border-radius: 16px;
+    position: relative; /* Quan trọng: để step-dot định vị theo box này */
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    min-height: 250px;
 }
 
 .step-number {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 800;
     color: #2563eb;
     margin-bottom: 10px;
 }
 
 .step-box h2 {
     font-size: 20px;
-    margin-bottom: 15px;
-    color: #0f172a;
+    margin-bottom: 10px;
 }
 
 .step-box p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
     color: #475569;
 }
 
+/* Dấu chấm nối */
 .step-dot {
+    position: absolute;
+    right: -30px; /* Đẩy ra ngoài bên phải box */
+    top: 50%;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    border: 4px solid #2563eb;
     background: white;
-    position: absolute;
-    right: -30px; 
-    top: 50%;
+    border: 5px solid #2563eb; /* Màu viền xanh */
+    border-radius: 50%;
     transform: translateY(-50%);
-    z-index: 2;
+    z-index: 1;
 }
 
-.step-box:last-child .step-dot {
-    display: none;
-}
+
 
 .free-shipping {
     background: #00c73c;
