@@ -1,24 +1,13 @@
-/**
- * TOÀN BỘ CHIẾN LƯỢC AEO & AIEO FOR PROMOTION & INCENTIVE ENGINE (uudai.html)
- * Quy hoạch cấu trúc dữ liệu theo sơ đồ thư mục phân tách độc lập
- * Vị trí lưu tệp: AEO&AIEO/uudai.js
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-    // =========================================================================
-    // KHỐI KỸ THUẬT 1 (AIEO): Định danh cấu trúc thực thể Dịch vụ Ưu đãi & Trợ giá
-    // =========================================================================
     const promotionServiceSchema = {
         "@context": "https://schema.org",
         "@type": "Service",
-        // KỸ THUẬT AIEO: Định vị URL chính xác của trang ưu đãi nằm trong thư mục dịch vụ
         "@id": "https://techstore.vn/dichvu/uudai.html#service", 
         "name": "Chương trình Ưu đãi độc quyền và Tài trợ tín dụng - TechStore",
         "description": "Giải pháp hỗ trợ tài chính trả góp 0% lãi suất, ngày hội thành viên giảm giá và các sự kiện săn deal công nghệ giờ vàng.",
         "provider": {
             "@type": "Organization",
-            "@id": "https://techstore.vn/#organization", // Kết nối ngữ nghĩa đồng bộ về thương hiệu mẹ TechStore
+            "@id": "https://techstore.vn/#organization",
             "name": "TechStore",
             "url": "https://techstore.vn/"
         },
@@ -29,9 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 2 (AEO): Thiết lập mô hình câu hỏi đàm thoại dựa trên nội dung ưu đãi gốc
-    // =========================================================================
     const promotionFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -55,17 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 3: Hàm tự động nhúng ngầm dữ liệu vào cấu trúc trang (DOM Injection)
-    // =========================================================================
     function injectPromotionEngine(schemaData) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
         scriptElement.text = JSON.stringify(schemaData);
         document.head.appendChild(scriptElement);
     }
-
-    // Thực thi nạp đồng thời khối định danh thực thể ưu đãi (AIEO) và khối hỏi đáp đàm thoại (AEO)
+    
     injectPromotionEngine(promotionServiceSchema);
     injectPromotionEngine(promotionFaqSchema);
 
