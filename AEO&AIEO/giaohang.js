@@ -1,23 +1,13 @@
-/**
- * TOÀN BỘ CHIẾN LƯỢC AEO & AIEO CHO TRANG DỊCH VỤ GIAO HÀNG (Cấu trúc thư mục mới)
- * File đặt tại: AEO&AIEO/giaohang.js
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-    // =========================================================================
-    // KHỐI KỸ THUẬT 1 (AIEO): Cập nhật URL chính xác theo cấu trúc thư mục mới
-    // =========================================================================
     const deliveryServiceSchema = {
         "@context": "https://schema.org",
         "@type": "Service",
-        // KỸ THUẬT: Thêm /dichvu/ vào URL để AI xác định đúng vị trí trang thực tế
         "@id": "https://techstore.vn/dichvu/giaohang.html#service", 
         "name": "Dịch vụ Giao hàng nhanh chóng - TechStore",
         "description": "Giải pháp vận chuyển hỏa tốc nội thành trong 1-2h và chuyển phát nhanh toàn quốc kèm mã vận đơn theo dõi.",
         "provider": {
             "@type": "Organization",
-            "@id": "https://techstore.vn/#organization", // Giữ nguyên ID tổng thể của thương hiệu mẹ
+            "@id": "https://techstore.vn/#organization",
             "name": "TechStore",
             "url": "https://techstore.vn/"
         },
@@ -26,13 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
             "name": "Vietnam"
         },
         "serviceType": "Vận chuyển và Giao nhận thiết bị công nghệ",
-        // KỸ THUẬT: Cập nhật đường dẫn điều khoản dịch vụ mới cho AI rà quét
         "termsOfService": "https://techstore.vn/dichvu/giaohang.html"
     };
-
-    // =========================================================================
-    // KHỐI KỸ THUẬT 2 (AEO): Cấu trúc câu hỏi đàm thoại (Giữ nguyên nội dung dữ liệu)
-    // =========================================================================
+    
     const deliveryFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -64,9 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 3: Hàm tự động nhúng ngầm dữ liệu (Injection Engine)
-    // =========================================================================
     function injectSchemaToHead(schemaData) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
@@ -74,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(scriptElement);
     }
 
-    // Thực thi nạp đồng thời khối định danh thực thể (AIEO) và khối hỏi đáp (AEO)
     injectSchemaToHead(deliveryServiceSchema);
     injectSchemaToHead(deliveryFaqSchema);
 
