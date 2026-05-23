@@ -210,6 +210,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+  margin-bottom: 30px;
 }
 
 .promo-card {
@@ -220,6 +221,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   border: 1px solid #f1f5f9;
+  margin-right: 30px;
 }
 
 .card-top {
@@ -459,7 +461,7 @@ nav ul li a:hover {
   background-color: #fdf4f7;
   border: 1px solid #fbcfe8;
   border-radius: 12px;
-  padding: 20px;
+  padding: 40px;
   display: flex;
   align-items: center;
   gap: 16px;
