@@ -305,7 +305,7 @@ nav ul li a:hover {
     padding: 80px 40px 30px 40px;
 }
 
-.question-title {
+.Question h1 {
     text-align: center;
     margin-bottom: 50px;
     background: #f8f8f8;
