@@ -185,7 +185,6 @@ nav ul li a:hover {
 
 .container {
   width: 100%;
-  max-width: 1140px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -319,7 +318,6 @@ nav ul li a:hover {
 .loyalty-wrapper {
   background: white;
   width: 100%;
-  max-width: 1140px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -423,7 +421,6 @@ nav ul li a:hover {
 
 .events-container {
   width: 100%;
-  max-width: 1140px;
   margin: 0 auto;
   padding: 60px 20px;
   font-family: 'Inter', sans-serif, Arial;
