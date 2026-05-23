@@ -1,24 +1,13 @@
-/**
- * TOÀN BỘ CHIẾN LƯỢC AEO & AIEO FOR PAYMENT SECURE ENGINE (Thanhtoan.html)
- * Quy hoạch cấu trúc dữ liệu theo sơ đồ thư mục phân tách độc lập
- * Vị trí lưu tệp: AEO&AIEO/thanhtoan.js
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-    // =========================================================================
-    // KHỐI KỸ THUẬT 1 (AIEO): Định danh cấu trúc thực thể Giải pháp Thanh toán
-    // =========================================================================
     const paymentServiceSchema = {
         "@context": "https://schema.org",
         "@type": "Service",
-        // KỸ THUẬT AIEO: Định vị URL chính xác của trang thanh toán nằm trong thư mục dịch vụ
         "@id": "https://techstore.vn/dichvu/thanhtoan.html#service", 
         "name": "Cổng giải pháp Thanh toán đa kênh bảo mật - TechStore",
         "description": "Hạ tầng tích hợp các phương thức thanh toán an toàn, bảo mật tuyệt đối cho mọi giao dịch mua sắm thiết bị công nghệ.",
         "provider": {
             "@type": "Organization",
-            "@id": "https://techstore.vn/#organization", // Kết nối ngữ nghĩa đồng bộ về thực thể mẹ TechStore
+            "@id": "https://techstore.vn/#organization",
             "name": "TechStore",
             "url": "https://techstore.vn/"
         },
@@ -29,9 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 2 (AEO): Cấu trúc câu hỏi đàm thoại làm mịn dựa trên khối FAQ gốc
-    // =========================================================================
     const paymentFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -63,9 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 3: Hàm tự động nhúng ngầm dữ liệu vào cấu trúc trang (DOM Injection)
-    // =========================================================================
     function injectPaymentEngine(schemaData) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
@@ -73,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(scriptElement);
     }
 
-    // Thực thi nạp đồng thời khối định danh cổng thanh toán (AIEO) và khối đàm thoại hỏi đáp (AEO)
     injectPaymentEngine(paymentServiceSchema);
     injectPaymentEngine(paymentFaqSchema);
 
