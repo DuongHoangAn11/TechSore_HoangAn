@@ -650,17 +650,9 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-  .events-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .tier-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .promo-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .events-grid, .tier-grid, .promo-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /*
