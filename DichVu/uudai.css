@@ -660,6 +660,7 @@ hr {
   }
 }
 
+/*
 @media (min-width: 480px) {
   .newsletter-form {
     flex-direction: row;
@@ -668,3 +669,4 @@ hr {
     border-radius: 30px;
   }
 }
+*/
