@@ -360,7 +360,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 35px;
-    text-align: center;
 }
 
 .lienhengay {
