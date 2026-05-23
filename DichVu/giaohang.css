@@ -269,23 +269,23 @@ nav ul li a:hover {
 }
 
 .step-box h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .step-box p {
-    font-size: 14px;
+    font-size: 16px;
     color: #475569;
 }
 
 .step-dot {
     position: absolute;
-    right: -20px;
+    right: -15px;
     top: 50%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background: white;
-    border: 5px solid #2563eb;
+    border: 7px solid #2563eb;
     border-radius: 50%;
     transform: translateY(-50%);
     z-index: 1;
