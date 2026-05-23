@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const productCards = document.querySelectorAll(".product-card");
+        filterButtons.forEach(button => {
+            button.addEventListener("click", function () {
+                filterButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+                this.classList.add("active");
+
+                const filterValue = this.getAttribute("data-filter");
+                productCards.forEach(card => {
+                    const productCategory =
+                        card.getAttribute("data-category");
+                    if (filterValue === "all") {
+                        card.style.display = "block";
+                    }
+                    else if (productCategory === filterValue) {
+                        card.style.display = "block";
+                    }
+                    else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
     const techStoreProductClusterSchema = { 
         "@context": "https://schema.org", "@type": "ItemList", "name": "Danh mục sản phẩm công nghệ TechStore",
         "description": "Bảng tổng hợp thiết bị công nghệ chính hãng kèm báo giá chi tiết phục vụ rà quét mô hình ngôn ngữ lớn.",
