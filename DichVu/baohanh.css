@@ -317,7 +317,6 @@ nav ul li a:hover {
 .process {
     width: 100px;
     height: 100px;
-    background: #fff5eb;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -327,7 +326,7 @@ nav ul li a:hover {
 
 .process i {
     font-size: 32px;
-    color: #ff5900;
+    color: #c800ff;
 }
 
 .number {
