@@ -1,13 +1,4 @@
-/**
- * TOÀN BỘ CHIẾN LƯỢC AEO & AIEO VÀ LOGIC XỬ LÝ FORM TRANG LIÊN HỆ
- * Quy hoạch đồng bộ chung vào 1 tệp Javascript duy nhất
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-    // ==========================================
-    // KHỐI KỸ THUẬT 1 (AIEO): Xác thực địa lý NAP
-    // ==========================================
     const techStoreContactGeoSchema = {
         "@context": "https://schema.org",
         "@type": "Store",
@@ -31,9 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // ==========================================
-    // KHỐI KỸ THUẬT 2 (AEO): Hỏi đáp đàm thoại
-    // ==========================================
     const contactSupportFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -57,9 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // ==========================================
-    // KHỐI KỸ THUẬT 3: Hàm tự động nhúng (Inject)
-    // ==========================================
     function injectSchemaToHead(schemaObject) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
@@ -67,16 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(scriptElement);
     }
 
-    // Thực thi nhúng dữ liệu ngữ nghĩa vào trang web
     injectSchemaToHead(techStoreContactGeoSchema);
     injectSchemaToHead(contactSupportFaqSchema);
 
     console.log("📍 Đã kích hoạt toàn bộ lõi dữ liệu AEO/AIEO trong cùng một tệp Lienhe.js");
 });
 
-// =========================================================================
-// KHỐI XỬ LÝ FORM: Kiểm tra dữ liệu nhập vào (Validation)
-// =========================================================================
 function validate1() {
     let isValid = true;
 
@@ -111,17 +92,15 @@ function validate1() {
         isValid = false;
     }
 
-    // 3. Kiểm tra trường Tin nhắn
     if (tinnhan === "") {
         mesgerror.innerHTML = "Vui lòng điền vào nội dung tin nhắn!";
         isValid = false;
     }
 
-    // Xử lý khi tất cả các trường dữ liệu đều hợp lệ
     if (isValid) {
         alert("Gửi thông tin liên hệ thành công!");
-        document.querySelector("form").reset(); // Reset giao diện form về trạng thái trống
+        document.querySelector("form").reset();
     }
 
-    return false; // Ngăn chặn trang web bị tải lại (Reload) sau khi nhấn submit
+    return false;
 }
