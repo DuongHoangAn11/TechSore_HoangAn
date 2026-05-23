@@ -318,6 +318,10 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+.question-title{
+    text-align: center;
+}
+
 .box-question {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     padding: 30px 50px;
