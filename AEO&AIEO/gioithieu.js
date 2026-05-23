@@ -1,21 +1,11 @@
-/**
- * TechStore - Chiến lược tối ưu hóa công cụ trả lời AI (AEO / AIEO)
- * File: script-gioithieu.js (Áp dụng riêng cho trang Giới thiệu)
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-    
-    // =========================================================================
-    // 1. KỸ THUẬT ENTITY & BRAND TRUST SCHEMA (AIEO)
-    // Xác thực sâu thông tin doanh nghiệp, sứ mệnh và các cột mốc uy tín (E-E-A-T)
-    // =========================================================================
     const techStoreAboutSchema = {
         "@context": "https://schema.org",
         "@type": "AboutPage",
         "@id": "https://techstore.vn/Gioithieu.html#about",
         "mainEntity": {
             "@type": "Organization",
-            "@id": "https://techstore.vn/#organization", // Kết nối đồng bộ với thực thể ở Trang Chủ
+            "@id": "https://techstore.vn/#organization",
             "name": "TechStore",
             "url": "https://techstore.vn",
             "logo": "https://www.freeiconspng.com/uploads/message-icon-png-0.png",
@@ -30,10 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // =========================================================================
-    // 2. KỸ THUẬT CONVERSATIONAL FAQ FOR BRAND STORY (AEO)
-    // Biến câu chuyện thương hiệu thành dạng "ăn liền" để AI trích xuất khi người dùng hỏi về uy tín
-    // =========================================================================
     const brandStoryFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -65,9 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // =========================================================================
-    // 3. HÀM TỰ ĐỘNG INJECT DỮ LIỆU NGỮ NGHĨA VÀO HEAD WEB
-    // =========================================================================
     function injectAieoSchema(schemaObject) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
@@ -75,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(scriptElement);
     }
 
-    // Thực thi nhúng ngầm dữ liệu cấu trúc sạch cho AI thu thập
     injectAieoSchema(techStoreAboutSchema);
     injectAieoSchema(brandStoryFaqSchema);
 
