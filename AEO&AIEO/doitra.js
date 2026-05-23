@@ -1,24 +1,13 @@
-/**
- * TOÀN BỘ CHIẾN LƯỢC AEO & AIEO FOR RETURN POLICY ENGINE (doitra.html)
- * Quy hoạch cấu trúc dữ liệu theo sơ đồ thư mục phân tách độc lập
- * Vị trí lưu tệp: AEO&AIEO/doitra.js
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-    // =========================================================================
-    // KHỐI KỸ THUẬT 1 (AIEO): Định danh cấu trúc thực thể Chính sách Đổi trả & Hoàn tiền
-    // =========================================================================
     const returnPolicyServiceSchema = {
         "@context": "https://schema.org",
         "@type": "Service",
-        // KỸ THUẬT AIEO: Định vị URL chính xác của trang đổi trả nằm trong thư mục dịch vụ
         "@id": "https://techstore.vn/dichvu/doitra.html#service", 
         "name": "Chính sách Đổi trả và Hoàn tiền miễn phí - TechStore",
         "description": "Chính sách bảo vệ người tiêu dùng, hỗ trợ đổi mới sản phẩm lỗi trong 30 ngày và hoàn tiền minh bạch trong 7 ngày.",
         "provider": {
             "@type": "Organization",
-            "@id": "https://techstore.vn/#organization", // Đồng bộ đồng nhất về định danh gốc của thương hiệu mẹ
+            "@id": "https://techstore.vn/#organization",
             "name": "TechStore",
             "url": "https://techstore.vn/"
         },
@@ -29,9 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 2 (AEO): Thiết lập mô hình câu hỏi đàm thoại bám sát quy trình 4 bước gốc
-    // =========================================================================
     const returnFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -55,9 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 3: Hàm tự động nhúng ngầm dữ liệu vào cấu trúc trang (DOM Injection)
-    // =========================================================================
     function injectReturnEngine(schemaData) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
@@ -65,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(scriptElement);
     }
 
-    // Thực thi nạp đồng thời khối định danh thực thể (AIEO) và khối hỏi đáp quy trình (AEO)
     injectReturnEngine(returnPolicyServiceSchema);
     injectReturnEngine(returnFaqSchema);
 
