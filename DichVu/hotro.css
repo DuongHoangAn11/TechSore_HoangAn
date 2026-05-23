@@ -327,7 +327,12 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+.box-question h3{
+    font-size: 32px;
+}
+
 .box-question p {
+    font-size: 26px;
     padding: 10px 0;
 }
 
