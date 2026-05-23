@@ -208,7 +208,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0px 10px 70px;
+    margin: 0 auto 20px auto; 
 }
 
 .feature-icon i {
