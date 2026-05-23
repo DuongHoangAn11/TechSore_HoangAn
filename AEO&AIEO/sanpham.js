@@ -1,13 +1,4 @@
-/**
- * TOÀN BỘ CHIẾN LƯỢC AEO & AIEO CHO TRANG SẢN PHẨM
- * Quy hoạch đồng bộ chung vào 1 tệp Javascript duy nhất (Sanpham.js)
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-    // ==========================================
-    // KHỐI KỸ THUẬT 1 (AIEO): Khai báo cụm thực thể danh mục sản phẩm
-    // ==========================================
     const techStoreProductClusterSchema = { 
         "@context": "https://schema.org", "@type": "ItemList", "name": "Danh mục sản phẩm công nghệ TechStore",
         "description": "Bảng tổng hợp thiết bị công nghệ chính hãng kèm báo giá chi tiết phục vụ rà quét mô hình ngôn ngữ lớn.",
@@ -84,10 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         ]
     };
-
-    // ==========================================
-    // KHỐI KỸ THUẬT 2 (AEO): Câu hỏi đàm thoại về chính sách mua sắm
-    // ==========================================
+    
     const productPurchaseFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -111,9 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // ==========================================
-    // KHỐI KỸ THUẬT 3: Hàm xử lý tự động nhúng ngầm (Injection Engine)
-    // ==========================================
     function injectSchemaToHead(schemaData) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
@@ -121,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(scriptElement);
     }
 
-    // Thực thi nạp đồng thời toàn bộ dữ liệu tối ưu hóa cho AI
     injectSchemaToHead(techStoreProductClusterSchema);
     injectSchemaToHead(productPurchaseFaqSchema);
 
