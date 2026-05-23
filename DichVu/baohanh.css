@@ -201,8 +201,8 @@ nav ul li a:hover {
 
 
 .feature-icon {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     background: #f8d7ff;
     border-radius: 50%;
     display: flex;
@@ -213,17 +213,17 @@ nav ul li a:hover {
 
 .feature-icon i {
     color: #c800ff;
-    font-size: 25px;
+    font-size: 36px;
 }
 
 .feature-card h2 {
-    font-size: 19px;
+    font-size: 26px;
     margin-bottom: 20px;
     color: #0f172a;
 }
 
 .feature-card p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.7;
     color: #475569;
 }
@@ -241,7 +241,7 @@ nav ul li a:hover {
 }
 
 .process-title h1 {
-    font-size: 40px;
+    font-size: 45px;
 
     color: #0f172a;
 
@@ -249,7 +249,7 @@ nav ul li a:hover {
 }
 
 .process-title p {
-    font-size: 20px;
+    font-size: 26px;
 
     color: #475569;
 }
@@ -274,7 +274,7 @@ nav ul li a:hover {
 }
 
 .step-number {
-    font-size: 35px;
+    font-size: 38px;
     font-weight: bold;
 
     color: #2563eb;
@@ -283,7 +283,7 @@ nav ul li a:hover {
 }
 
 .step-box h2 {
-    font-size: 20px;
+    font-size: 26px;
 
     margin-bottom: 20px;
 
@@ -291,7 +291,7 @@ nav ul li a:hover {
 }
 
 .step-box p {
-    font-size: 15px;
+    font-size: 20px;
 
     line-height: 1.5;
 
@@ -299,8 +299,8 @@ nav ul li a:hover {
 }
 
 .step-dot {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 
     border-radius: 50%;
 
@@ -315,15 +315,19 @@ nav ul li a:hover {
 }
 
 .process {
+    width: 60px;
+    height: 60px;
+    background: #fff5eb;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0px 20px 0;
+    margin: 0 auto 20px auto;
 }
 
 .process i {
-    color: #c800ff;
     font-size: 25px;
+    color: #ff5900;
 }
 
 .number {
