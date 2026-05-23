@@ -303,6 +303,7 @@ nav ul li a:hover {
 .Question {
     background: #f8f8f8;
     padding: 80px 40px 30px 40px;
+    text-align: center;
 }
 
 .Question h1 {
