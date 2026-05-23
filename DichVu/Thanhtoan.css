@@ -164,17 +164,17 @@ nav ul li a:hover {
 }
 
 .hero-icon i {
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .service-hero h1 {
-    font-size: 45px;
+    font-size: 55px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .service-hero p {
-    font-size: 22px;
+    font-size: 26px;
     color: #ececece1;
 }
 
@@ -198,14 +198,14 @@ nav ul li a:hover {
 
 .payment-main-title {
     color: #0f1c3f;
-    font-size: 32px;
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .payment-sub-title {
     color: #6b7280;
-    font-size: 15px;
+    font-size: 26px;
     margin: 0;
 }
 
@@ -223,6 +223,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     border: 1px solid #f1f5f9;
+    margin-right: 30px;
 }
 
 .pay-top {
@@ -247,19 +248,19 @@ nav ul li a:hover {
 }
 
 .pay-icon {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 16px;
 }
 
 .pay-title {
-    font-size: 19px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 1.4;
     margin: 0 0 8px 0;
 }
 
 .pay-subtitle {
-    font-size: 13px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.85);
     margin: 0;
 }
@@ -289,7 +290,7 @@ nav ul li a:hover {
 
 .pay-tick {
     color: #22c55e;
-    font-size: 17px;
+    font-size: 20px;
     margin-right: 12px;
     flex-shrink: 0;
 }
@@ -314,14 +315,14 @@ nav ul li a:hover {
 
 .bank-main-title {
     color: #0f1c3f;
-    font-size: 32px;
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .bank-sub-title {
     color: #6b7280;
-    font-size: 15px;
+    font-size: 26px;
     margin: 0;
 }
 
@@ -343,7 +344,7 @@ nav ul li a:hover {
 
 .bank-name {
     color: #0f1c3f;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
     margin: 0 0 20px 0;
 }
@@ -355,14 +356,14 @@ nav ul li a:hover {
 .info-label {
     display: block;
     color: #64748b;
-    font-size: 13px;
+    font-size: 18px;
     margin-bottom: 2px;
 }
 
 .info-value {
     display: block;
     color: #1e293b;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -372,13 +373,13 @@ nav ul li a:hover {
 
 .highlight-blue {
     color: #1866ff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 .bank-footer-note {
     margin-top: auto;
-    padding-top: 15px;
+    padding-top: 18px;
     border-top: 1px dashed #cbdff7;
     color: #475569;
     font-size: 13px;
@@ -390,7 +391,7 @@ nav ul li a:hover {
     padding: 16px 20px;
     border-radius: 4px;
     color: #334155;
-    font-size: 14px;
+    font-size: 26px;
     line-height: 1.6;
 }
 
@@ -423,14 +424,14 @@ nav ul li a:hover {
 
 .security-main-title {
     color: #0f1c3f;
-    font-size: 32px;
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .security-sub-title {
     color: #6b7280;
-    font-size: 15px;
+    font-size: 26px;
     margin: 0;
 }
 
@@ -461,26 +462,26 @@ nav ul li a:hover {
 .security-icon-circle {
     background-color: #eef2ff;
     color: #4f46e5;
-    width: 70px;
-    height: 70px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 .security-card-title {
     color: #0f1c3f;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
 
 .security-card-desc {
     color: #6b7280;
-    font-size: 14px;
+    font-size: 17px;
     margin: 0;
     line-height: 1.5;
 }
@@ -511,14 +512,14 @@ nav ul li a:hover {
 }
 
 .partners-main-title {
-    font-size: 32px;
+    font-size: 45px;
     font-weight: 700;
     margin: 0 0 12px 0;
     letter-spacing: 0.5px;
 }
 
 .partners-sub-title {
-    font-size: 15px;
+    font-size: 26px;
     color: rgba(255, 255, 255, 0.85);
     margin: 0;
 }
@@ -534,9 +535,9 @@ nav ul li a:hover {
 .logo-item {
     background-color: rgba(255, 255, 255, 0.12);
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
-    padding: 16px 45px;
+    padding: 18px 47px;
     border-radius: 12px;
     min-width: 140px;
     text-align: center;
@@ -574,7 +575,7 @@ nav ul li a:hover {
 
 .fuck-main-title {
     color: #0f1c3f;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
     margin: 0 0 35px 0;
 }
@@ -593,7 +594,7 @@ nav ul li a:hover {
 
 .fuck-question {
     color: #0f1c3f;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     margin: 0;
     line-height: 1.4;
@@ -601,11 +602,10 @@ nav ul li a:hover {
 
 .fuck-answer {
     color: #576574;
-    font-size: 14.5px;
+    font-size: 18px;
     line-height: 1.6;
     margin: 0;
 }
-
 
 .footer {
     background: #01081efa;
