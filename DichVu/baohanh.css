@@ -229,71 +229,55 @@ nav ul li a:hover {
 
 .delivery-process {
     background: #f8fafc;
-
     padding: 80px 40px;
 }
 
 .process-title {
     text-align: center;
-
     margin-bottom: 60px;
 }
 
 .process-title h1 {
     font-size: 45px;
-
     color: #0f172a;
-
     margin-bottom: 15px;
 }
 
 .process-title p {
     font-size: 26px;
-
     color: #475569;
 }
 
 .process-container {
     display: grid;
-
     grid-template-columns: repeat(5, 1fr);
-
     gap: 30px;
     text-align: center;
 }
 
 .step-box {
     background: #ffffff;
-
     border-radius: 20px;
-
     padding: 20px 30px;
-
     position: relative;
 }
 
 .step-number {
     font-size: 35px;
     font-weight: bold;
-
     color: #2563eb;
-
     margin-bottom: 10px;
 }
 
 .step-box h2 {
     font-size: 30px;
-
     margin-bottom: 20px;
-
     color: #0f172a;
 }
 
 .step-box p {
     font-size: 22px;
-
     line-height: 1.5;
-
     color: #475569;
 }
 
@@ -348,21 +332,17 @@ nav ul li a:hover {
 
 .condition-title {
     text-align: center;
-
     margin-bottom: 60px;
 }
 
 .Condition h1 {
     font-size: 45px;
-
     color: #0f172a;
-
     margin-bottom: 15px;
 }
 
 .Condition p {
     font-size: 26px;
-
     color: #475569;
 }
 
@@ -394,7 +374,6 @@ nav ul li a:hover {
 .condition-box1 p {
     margin: 20px 0 20px 0;
     font-size: 20px;
-
 }
 
 .condition-box1 p i {
@@ -438,11 +417,8 @@ nav ul li a:hover {
 
 .tradeback {
     background: #c800ff;
-
     padding: 80px 20px;
-
     text-align: center;
-
     color: rgb(255, 255, 255);
 }
 
