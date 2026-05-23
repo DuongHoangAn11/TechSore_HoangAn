@@ -307,7 +307,7 @@ nav ul li a:hover {
 
 .question-title {
     text-align: center;
-    font-size: 50px;
+    font-size: 45x;
     margin-bottom: 50px;
     background: #f8f8f8;
 }
@@ -320,18 +320,19 @@ nav ul li a:hover {
 .box-question {
     background: rgb(255, 255, 255);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    padding: 30px;
-    margin: 40px 50px;
+    padding: 30px 50px;
+    margin: 50px 50px;
     border-radius: 10px;
 }
 
 .box-question h3{
     font-size: 32px;
+    padding: 20px 0;
 }
 
 .box-question p {
     font-size: 26px;
-    padding: 10px 0;
+    padding-bottom: 20px;
 }
 
 .Support {
