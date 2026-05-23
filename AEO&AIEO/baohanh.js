@@ -1,24 +1,13 @@
-/**
- * TOÀN BỘ CHIẾN LƯỢC AEO & AIEO FOR WARRANTY POLICY ENGINE (baohanh.html)
- * Quy hoạch cấu trúc dữ liệu theo sơ đồ thư mục phân tách độc lập
- * Vị trí lưu tệp: AEO&AIEO/baohanh.js
- */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-    // =========================================================================
-    // KHỐI KỸ THUẬT 1 (AIEO): Định danh cấu trúc thực thể Dịch vụ Bảo hành điện tử
-    // =========================================================================
     const warrantyServiceSchema = {
         "@context": "https://schema.org",
         "@type": "Service",
-        // KỸ THUẬT AIEO: Định vị URL chính xác của trang bảo hành nằm trong thư mục dịch vụ
         "@id": "https://techstore.vn/dichvu/baohanh.html#service", 
         "name": "Dịch vụ Bảo hành điện tử chính hãng - TechStore",
         "description": "Chính sách bảo hành tiêu chuẩn từ 12 đến 24 tháng cho tất cả thiết bị công nghệ, hỗ trợ tiếp nhận đa kênh và xử lý kỹ thuật chuyên sâu.",
         "provider": {
             "@type": "Organization",
-            "@id": "https://techstore.vn/#organization", // Đồng bộ đồng nhất về định danh gốc của thương hiệu mẹ
+            "@id": "https://techstore.vn/#organization",
             "name": "TechStore",
             "url": "https://techstore.vn/"
         },
@@ -29,9 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 2 (AEO): Thiết lập mô hình câu hỏi đàm thoại dựa trên nội dung gốc
-    // =========================================================================
     const warrantyFaqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -55,9 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    // =========================================================================
-    // KHỐI KỸ THUẬT 3: Hàm tự động nhúng ngầm dữ liệu vào cấu trúc trang (DOM Injection)
-    // =========================================================================
     function injectWarrantyEngine(schemaData) {
         const scriptElement = document.createElement('script');
         scriptElement.type = 'application/ld+json';
@@ -65,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(scriptElement);
     }
 
-    // Thực thi nạp đồng thời khối định danh thực thể (AIEO) và khối hỏi đáp chính sách (AEO)
     injectWarrantyEngine(warrantyServiceSchema);
     injectWarrantyEngine(warrantyFaqSchema);
 
