@@ -267,17 +267,17 @@ nav ul li a:hover {
 .process {
     width: 60px;
     height: 60px;
-    background: #ffe7be;
+    background: #fff5eb;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0px 20px 45px;
+    margin: 0 auto 20px auto;
 }
 
 .process i {
-    color: #f69218;
     font-size: 25px;
+    color: #ff5900;
 }
 
 .Condition {
