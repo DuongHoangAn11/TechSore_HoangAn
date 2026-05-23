@@ -233,6 +233,20 @@ nav ul li a:hover {
     background: #f8fafc;
 }
 
+.process-title h1 {
+    font-size: 40px;
+
+    color: #0f172a;
+
+    margin-bottom: 15px;
+}
+
+.process-title p {
+    font-size: 20px;
+
+    color: #475569;
+}
+
 .process-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
