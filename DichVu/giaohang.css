@@ -231,7 +231,6 @@ nav ul li a:hover {
 .delivery-process {
     background: #f8fafc;
     padding: 80px 40px;
-    height: 360px;
 }
 
 .process-title {
@@ -253,15 +252,17 @@ nav ul li a:hover {
 .process-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
+    gap: 20px;
+    align-items: start;
 }
 
 .step-box {
-    background: #eff6ff;
+    background: white;
+    border: 1px solid #e2e8f0;
     border-radius: 20px;
-    padding: 40px 30px;
+    padding: 30px 20px;
     position: relative;
-    min-height: 280px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .step-number {
@@ -281,35 +282,31 @@ nav ul li a:hover {
 
 .step-box p {
     font-size: 23px;
-
     line-height: 1.7;
-
     color: #475569;
 }
 
 .step-dot {
-    width: 35px;
-    height: 35px;
-
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-
-    border: 8px solid #2563eb;
-
+    border: 4px solid #2563eb;
     background: white;
-
     position: absolute;
-
-    right: -18px;
+    right: -32px;
     top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.step-box:last-child .step-dot {
+    display: none;
 }
 
 .free-shipping {
     background: #00c73c;
-
     padding: 80px 20px;
-
     text-align: center;
-
     color: white;
 }
 
